@@ -16,23 +16,24 @@
   <meta name="author" content="Semi">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="docker学习笔记我下载的是docker  desktop安装过程不表，可以说明的是，安装的过程比较复杂，会报一些异常，需要耐心百度处理。 设置打开setting-&gt;docker_mirror     #### 换源        123456789&amp;#123;  &quot;registry-mirrors&quot;: [    &quot;http:&#x2F;&#x2F;hub-mirror.c.16">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2023/09/14/hello-world/index.html">
+<meta property="og:title" content="docker学习笔记（一）">
+<meta property="og:url" content="http://example.com/2023/09/24/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="Semi&#39;s blogs">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="docker学习笔记我下载的是docker  desktop安装过程不表，可以说明的是，安装的过程比较复杂，会报一些异常，需要耐心百度处理。 设置打开setting-&gt;docker_mirror     #### 换源        123456789&amp;#123;  &quot;registry-mirrors&quot;: [    &quot;http:&#x2F;&#x2F;hub-mirror.c.16">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-09-14T01:56:35.498Z">
-<meta property="article:modified_time" content="2023-09-14T01:56:35.498Z">
+<meta property="article:published_time" content="2023-09-24T06:58:25.000Z">
+<meta property="article:modified_time" content="2023-09-24T08:21:58.750Z">
 <meta property="article:author" content="Semi">
+<meta property="article:tag" content="docker基础">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Hello World - Semi&#39;s blogs</title>
+  <title>docker学习笔记（一） - Semi&#39;s blogs</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -225,7 +226,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="docker学习笔记（一）"></span>
           
         </div>
 
@@ -236,8 +237,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-14 09:56" pubdate>
-          2023年9月14日 上午
+        <time datetime="2023-09-24 14:58" pubdate>
+          2023年9月24日 下午
         </time>
       </span>
     
@@ -248,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          367 字
+          1.4k 字
         
       </span>
     
@@ -259,7 +260,7 @@
         
         
         
-          4 分钟
+          12 分钟
         
       </span>
     
@@ -296,24 +297,83 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello World</h1>
+            <h1 id="seo-header">docker学习笔记（一）</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+                <h1 id="docker学习笔记"><a href="#docker学习笔记" class="headerlink" title="docker学习笔记"></a>docker学习笔记</h1><p>我下载的是docker  desktop安装过程不表，可以说明的是，安装的过程比较复杂，会报一些异常，需要耐心百度处理。</p>
+<h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><p>打开setting-&gt;docker_mirror</p>
+<pre><code class="hljs">    #### 换源
+       <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs 打开setting->docker_mirror">&#123;<br>  &quot;registry-mirrors&quot;: [<br>    &quot;http://hub-mirror.c.163.com&quot;,<br>    &quot;https://docker.mirrors.ustc.edu.cn&quot;<br>  ],<br>  &quot;insecure-registries&quot;: [],<br>  &quot;debug&quot;: true,<br>  &quot;experimental&quot;: false<br>&#125; ```<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+#### 修改虚拟机大小
+</code></pre>
+<span id="more"></span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="初次使用"><a href="#初次使用" class="headerlink" title="初次使用"></a>初次使用</h2><p>​	跑最基础的镜像，验证docker是否配置成功：docker run hello-world</p>
+<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><ol>
+<li><p>docker run 运行容器</p>
+<pre><code class="hljs">   2. docker search 查询镜像
+   2. docker ps 查看当前所有正在运行的容器
+   2. docker ps -a 查看当前所有的容器 
+   2. docker ps -f name=指定的名字 使用过滤器(除了name外,常用的还可以指定id:id= 、所有停止的容器:status=exited,正在运行的容器:status=running 等) 
+   2. docker ps -n 2显示2个上次创建的容器(2可以改变)  
+   2. docker ps -l 显示最新创建的容器（包括所有状态） 
+   2. docker ps -q 仅显示ip 
+   2. docker ps -s 显示容器大小  
+   2. docker rm #删除一个或多个容器
+   2. docker rmi #删除一个或多个镜像
+   2. docker stop 容器名或容器id(前三位即可) #停止容器
+   2. docker container kill 容器名或容器id(前三位即可) #强制关闭容器
+   2. docker start 容器名或容器id(前三位即可) #启动容器
+</code></pre>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="left">常用可选参数</th>
+<th align="left">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">-i</td>
+<td align="left">表示以《交互模式》运行容器。</td>
+</tr>
+<tr>
+<td align="left">-d</td>
+<td align="left">会创建一个守护式容器在后台运行(这样创建容器后不会自动登录容器)。</td>
+</tr>
+<tr>
+<td align="left">-t</td>
+<td align="left">表示容器启动后会进入其命令行。加入这两个参数后，容器创建就能登录进去。即分配一个伪终端。</td>
+</tr>
+<tr>
+<td align="left">– name</td>
+<td align="left">为创建的容器命名。(默认会随机给名字,不支持中文字符!!!)</td>
+</tr>
+<tr>
+<td align="left">-v</td>
+<td align="left">表示目录映射关系，即宿主机目录:容器中目录。注意:最好做目录映射，在宿主机上做修改，然后共享到容器上。</td>
+</tr>
+<tr>
+<td align="left">-p</td>
+<td align="left">表示端口映射，即宿主机端口:容器中端口。 比如:-p 8080:80 就是将容器中的80端口,映射到主机中的8080端口</td>
+</tr>
+<tr>
+<td align="left">–network&#x3D;host</td>
+<td align="left">表示将主机的网络环境映射到容器中，使容器的网络与主机相同。每个 Docker 容器都有自己的网络连接空间连接到虚拟 LAN。使用此命令则会让容器和主机共享一个网络空间。</td>
+</tr>
+</tbody></table>
+<h3 id="例子："><a href="#例子：" class="headerlink" title="例子："></a>例子：</h3><p>搭建一个xss平台<br>    docker search xss  查询镜像<br>    docker pull wushangleon&#x2F;xss-platform<br>    docker run -d –name&#x3D;xss_platform -p 8001:80 wushangleon&#x2F;xss_platform </p>
+<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><pre><code class="hljs">* Exited（139）解决方案 :
+    创建：	C:\Users\(用户名)\.wslconfig
+    写入：
+</code></pre>
+<p>​		 <code>[wsl2]</code><br>​         <code>kernelCommandLine = vsyscall=emulate</code></p>
+<p>​      	</p>
+<p>​	 	     </p>
 
                 
               </div>
@@ -322,6 +382,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%B7%A5%E5%85%B7%E7%AF%87/" class="category-chain-item">工具篇</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/docker%E5%9F%BA%E7%A1%80/" class="print-no-link">#docker基础</a>
+      
+    </div>
   
 </div>
 
@@ -331,8 +419,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>http://example.com/2023/09/14/hello-world/</div>
+      <div>docker学习笔记（一）</div>
+      <div>http://example.com/2023/09/24/docker学习笔记（一）/</div>
     </div>
     <div class="license-meta">
       
@@ -344,7 +432,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年9月14日</div>
+          <div>2023年9月24日</div>
         </div>
       
       
@@ -376,15 +464,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/09/24/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/" title="docker学习笔记（一）">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">docker学习笔记（一）</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2023/09/14/hello-world/" title="Hello World">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
