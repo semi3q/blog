@@ -16,24 +16,24 @@
   <meta name="author" content="Semi">
   <meta name="keywords" content="">
   
-    <meta name="description" content="docker学习笔记我下载的是docker  desktop安装过程不表，可以说明的是，安装的过程比较复杂，会报一些异常，需要耐心百度处理。 设置修改虚拟机大小换源打开setting-&gt;   Docker Engine-&gt;   Docker_mirror         123456789&amp;#123;   &quot;registry-mirrors&quot;: [     &amp;quo">
+    <meta name="description" content="代审环境之Vulhub使用vulhub快速搭建漏洞验证环境github地址：vulhub&#x2F;vulhub: Pre-Built Vulnerable Environments Based on Docker-Compose (github.com) 下载解压之后即可。 启动漏洞环境#### 进入相应的文件夹   cmd输入命令:  1docker-compose up -d   成功运行容">
 <meta property="og:type" content="article">
-<meta property="og:title" content="docker学习笔记（一）">
-<meta property="og:url" content="http://semi3q.cn/2023/09/24/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
+<meta property="og:title" content="代审环境之Vulhub">
+<meta property="og:url" content="http://semi3q.cn/2023/09/28/%E4%BB%A3%E5%AE%A1%E7%8E%AF%E5%A2%83%E4%B9%8BVulhub/index.html">
 <meta property="og:site_name" content="Semi&#39;s blogs">
-<meta property="og:description" content="docker学习笔记我下载的是docker  desktop安装过程不表，可以说明的是，安装的过程比较复杂，会报一些异常，需要耐心百度处理。 设置修改虚拟机大小换源打开setting-&gt;   Docker Engine-&gt;   Docker_mirror         123456789&amp;#123;   &quot;registry-mirrors&quot;: [     &amp;quo">
+<meta property="og:description" content="代审环境之Vulhub使用vulhub快速搭建漏洞验证环境github地址：vulhub&#x2F;vulhub: Pre-Built Vulnerable Environments Based on Docker-Compose (github.com) 下载解压之后即可。 启动漏洞环境#### 进入相应的文件夹   cmd输入命令:  1docker-compose up -d   成功运行容">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-09-24T06:58:25.000Z">
-<meta property="article:modified_time" content="2023-09-24T08:48:53.123Z">
+<meta property="article:published_time" content="2023-09-28T02:11:02.000Z">
+<meta property="article:modified_time" content="2023-09-28T02:41:05.085Z">
 <meta property="article:author" content="Semi">
-<meta property="article:tag" content="docker基础">
+<meta property="article:tag" content="代审 环境 vulhub">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>docker学习笔记（一） - Semi&#39;s blogs</title>
+  <title>代审环境之Vulhub - Semi&#39;s blogs</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -226,7 +226,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="docker学习笔记（一）"></span>
+            <span id="subtitle" data-typed-text="代审环境之Vulhub"></span>
           
         </div>
 
@@ -242,8 +242,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-24 14:58" pubdate>
-          2023年9月24日 下午
+        <time datetime="2023-09-28 10:11" pubdate>
+          2023年9月28日 上午
         </time>
       </span>
     
@@ -254,7 +254,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          241 字
         
       </span>
     
@@ -265,7 +265,7 @@
         
         
         
-          12 分钟
+          3 分钟
         
       </span>
     
@@ -302,102 +302,24 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">docker学习笔记（一）</h1>
+            <h1 id="seo-header">代审环境之Vulhub</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="docker学习笔记"><a href="#docker学习笔记" class="headerlink" title="docker学习笔记"></a>docker学习笔记</h1><p>我下载的是docker  desktop安装过程不表，可以说明的是，安装的过程比较复杂，会报一些异常，需要耐心百度处理。</p>
-<h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><h3 id="修改虚拟机大小"><a href="#修改虚拟机大小" class="headerlink" title="修改虚拟机大小"></a>修改虚拟机大小</h3><h3 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h3><p>打开setting-&gt;   Docker Engine-&gt;   Docker_mirror</p>
-<hr>
-<pre><code class="hljs">       <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>   <span class="hljs-attr">&quot;registry-mirrors&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>     <span class="hljs-string">&quot;http://hub-mirror.c.163.com&quot;</span><span class="hljs-punctuation">,</span><br>     <span class="hljs-string">&quot;https://docker.mirrors.ustc.edu.cn&quot;</span><br>   <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>   <span class="hljs-attr">&quot;insecure-registries&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>   <span class="hljs-attr">&quot;debug&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">true</span></span><span class="hljs-punctuation">,</span><br>   <span class="hljs-attr">&quot;experimental&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><br> <span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
+                <h1 id="代审环境之Vulhub"><a href="#代审环境之Vulhub" class="headerlink" title="代审环境之Vulhub"></a>代审环境之Vulhub</h1><h2 id="使用vulhub快速搭建漏洞验证环境"><a href="#使用vulhub快速搭建漏洞验证环境" class="headerlink" title="使用vulhub快速搭建漏洞验证环境"></a>使用vulhub快速搭建漏洞验证环境</h2><p>github地址：<a target="_blank" rel="noopener" href="https://github.com/vulhub/vulhub">vulhub&#x2F;vulhub: Pre-Built Vulnerable Environments Based on Docker-Compose (github.com)</a></p>
+<p>下载解压之后即可。</p>
+<h3 id="启动漏洞环境"><a href="#启动漏洞环境" class="headerlink" title="启动漏洞环境"></a>启动漏洞环境</h3><pre><code class="hljs">#### 进入相应的文件夹
 </code></pre>
-<hr>
-<span id="more"></span>
+<ol>
+<li>cmd输入命令:</li>
+</ol>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">docker-compose up -d</span><br></code></pre></td></tr></table></figure>
 
-<h2 id="初次使用"><a href="#初次使用" class="headerlink" title="初次使用"></a>初次使用</h2><p>​	跑最基础的镜像，验证docker是否配置成功：docker run hello-world</p>
-<h2 id="基础命令"><a href="#基础命令" class="headerlink" title="基础命令"></a>基础命令</h2><ul>
-<li>docker run 运行容器</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="left">常用可选参数</th>
-<th align="left">作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">-i</td>
-<td align="left">表示以《交互模式》运行容器。</td>
-</tr>
-<tr>
-<td align="left">-d</td>
-<td align="left">会创建一个守护式容器在后台运行(这样创建容器后不会自动登录容器)。</td>
-</tr>
-<tr>
-<td align="left">-t</td>
-<td align="left">表示容器启动后会进入其命令行。加入这两个参数后，容器创建就能登录进去。即分配一个伪终端。</td>
-</tr>
-<tr>
-<td align="left">– name</td>
-<td align="left">为创建的容器命名。(默认会随机给名字,不支持中文字符!!!)</td>
-</tr>
-<tr>
-<td align="left">-v</td>
-<td align="left">表示目录映射关系，即宿主机目录:容器中目录。注意:最好做目录映射，在宿主机上做修改，然后共享到容器上。</td>
-</tr>
-<tr>
-<td align="left">-p</td>
-<td align="left">表示端口映射，即宿主机端口:容器中端口。 比如:-p 8080:80 就是将容器中的80端口,映射到主机中的8080端口</td>
-</tr>
-<tr>
-<td align="left">–network&#x3D;host</td>
-<td align="left">表示将主机的网络环境映射到容器中，使容器的网络与主机相同。每个 Docker 容器都有自己的网络连接空间连接到虚拟 LAN。使用此命令则会让容器和主机共享一个网络空间。</td>
-</tr>
-</tbody></table>
-<ul>
-<li><p>docker search 查询镜像</p>
-</li>
-<li><p>docker ps 查看当前所有正在运行的容器</p>
-</li>
-<li><p>docker ps -a 查看当前所有的容器 </p>
-</li>
-<li><p>docker ps -f name&#x3D;指定的名字 使用过滤器(除了name外,常用的还可以指定id:id&#x3D; 、所有停止的容器:status&#x3D;exited,正在运行的容器:status&#x3D;running 等) </p>
-</li>
-<li><p>docker ps -n 2显示2个上次创建的容器(2可以改变)  </p>
-</li>
-<li><p>docker ps -l 显示最新创建的容器（包括所有状态） </p>
-</li>
-<li><p>docker ps -q 仅显示ip </p>
-</li>
-<li><p>docker ps -s 显示容器大小  </p>
-</li>
-<li><p>docker rm #删除一个或多个容器</p>
-</li>
-<li><p>docker rmi #删除一个或多个镜像</p>
-</li>
-<li><p>docker stop 容器名或容器id(前三位即可) #停止容器</p>
-</li>
-<li><p>docker container kill 容器名或容器id(前三位即可) #强制关闭容器</p>
-</li>
-<li><p>docker start 容器名或容器id(前三位即可) #启动容器</p>
-<h2 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h2></li>
-</ul>
-<p>搭建一个xss平台<br>    docker search xss  查询镜像<br>    docker pull wushangleon&#x2F;xss-platform<br>    docker run -d –name&#x3D;xss_platform -p 8001:80 wushangleon&#x2F;xss_platform </p>
-<h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><ul>
-<li><p>Exited（139）解决方案 :</p>
-<p>  创建：	C:\Users(用户名).wslconfig</p>
-<p>  写入：</p>
-</li>
-</ul>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs tex">	[wsl2] <br><br>​   kernelCommandLine = vsyscall=emulate <br></code></pre></td></tr></table></figure>
-
-
-
-
-
-<p>​	</p>
-<p>​	 	     </p>
+<ol start="2">
+<li>成功运行容器后，既可通过浏览器来访问漏洞环境。</li>
+</ol>
+<p>Vulhub是一个集成式的漏洞验证环境，通过yml文件的配置，从云端拉取漏洞环境镜像。</p>
 
                 
               </div>
@@ -416,7 +338,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%B7%A5%E5%85%B7%E7%AF%87/" class="category-chain-item">工具篇</a>
+  <a href="/categories/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/" class="category-chain-item">代码审计</a>
   
   
 
@@ -431,7 +353,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/docker%E5%9F%BA%E7%A1%80/" class="print-no-link">#docker基础</a>
+        <a href="/tags/%E4%BB%A3%E5%AE%A1-%E7%8E%AF%E5%A2%83-vulhub/" class="print-no-link">#代审 环境 vulhub</a>
       
     </div>
   
@@ -443,8 +365,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>docker学习笔记（一）</div>
-      <div>http://semi3q.cn/2023/09/24/docker学习笔记（一）/</div>
+      <div>代审环境之Vulhub</div>
+      <div>http://semi3q.cn/2023/09/28/代审环境之Vulhub/</div>
     </div>
     <div class="license-meta">
       
@@ -456,7 +378,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年9月24日</div>
+          <div>2023年9月28日</div>
         </div>
       
       
@@ -481,18 +403,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/09/28/%E4%BB%A3%E5%AE%A1%E7%8E%AF%E5%A2%83%E4%B9%8BVulhub/" title="代审环境之Vulhub">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">代审环境之Vulhub</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/09/14/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/09/24/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/" title="docker学习笔记（一）">
+                        <span class="hidden-mobile">docker学习笔记（一）</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -507,7 +423,7 @@
   
     <article id="comments" lazyload>
       
-  <div id="SOHUCS" sid='http://semi3q.cn/2023/09/24/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/'></div>
+  <div id="SOHUCS" sid='http://semi3q.cn/2023/09/28/%E4%BB%A3%E5%AE%A1%E7%8E%AF%E5%A2%83%E4%B9%8BVulhub/'></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#SOHUCS', function() {
       Fluid.utils.createScript("https://changyan.sohu.com/upload/changyan.js", function() {
