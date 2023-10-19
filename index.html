@@ -253,6 +253,147 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
+        <a href="/2023/10/16/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%EF%BC%88%E4%BA%8C%EF%BC%89/" target="_self">
+          代码审计（二）
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/10/16/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%EF%BC%88%E4%BA%8C%EF%BC%89/" target="_self">
+        <div>
+          代码审计共有危险点： 1、sql语句中order by 后面的参数是无法进行预编译赋值的，所以需要重点排查。 2、命令执行：java代码的runtime类，可能会存在命令执行。 框架漏洞 mybatis sql注入：${Parameter}会存在，可以重点排查   hibernate 未采取预编译的地方，可以重点排查。例如：Query query &#x3D; session.createNati
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-10-16 09:16" pubdate>
+              2023-10-16
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/">#代码审计</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/10/12/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%EF%BC%88%E4%B8%80%EF%BC%89/" target="_self">
+          代码审计（一）
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/10/12/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%EF%BC%88%E4%B8%80%EF%BC%89/" target="_self">
+        <div>
+          代码审计一、思路1、接口排查： ​	springboot是通过注释的方式配置程序的接口，可以正向接口排查 优点： ​	排查相对全面 缺点： ​	目的不强，不容易找到漏洞 2、危险函数定位法： ​		如：runtime.exe()、java.lang.ProcessBuilder.star() 传入危险函数中的参数，是否由我们控制，对参数过滤是否严格、细致。 优点：有针对性的寻找漏洞 缺点：不够细致
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-10-12 20:20" pubdate>
+              2023-10-12
+            </time>
+          </div>
+        
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/">#代码审计</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2023/09/28/%E4%BB%A3%E5%AE%A1%E4%B9%8BIDEA%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/" target="_self">
+          代审之IDEA远程调试
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2023/09/28/%E4%BB%A3%E5%AE%A1%E4%B9%8BIDEA%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/" target="_self">
+        <div>
+          代审之IDEA远程调试前提：IntelliJ IDEA 可以在无源代码的情况下进行远程调试，只需将程序的 class 文件 或 Jar 包添加进项目依赖即可对一些未开源的 Java 程序或大型中间件进行远程调试。 jar远程调试    jar包右键，选择**”Add as Library…”**   点击**+选择添加一个remote**,记住启动参数     运行jar可以在cmd命令行直接运行
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2023-09-28 13:45" pubdate>
+              2023-09-28
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/" class="category-chain-item">代码审计</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1-%E8%BF%9C%E7%A8%8B%E8%B0%83%E8%AF%95/">#代码审计 远程调试</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
         <a href="/2023/09/28/%E4%BB%A3%E5%AE%A1%E7%8E%AF%E5%A2%83%E4%B9%8BVulhub/" target="_self">
           代审环境之Vulhub
         </a>
